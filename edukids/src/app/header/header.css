@@ -1,0 +1,72 @@
+/* --- Estilos base (Desktop) --- */
+.header-main {
+    background-color: var(--blanco);
+    color: var(--azul-principal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    margin-left: 5rem;
+    /* margin-bottom eliminado porque ya usamos flex-row por defecto */
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 220px; /* Tamaño para PC */
+    object-fit: contain; 
+}
+
+/* Estilos del ícono por defecto (oculto en PC) */
+.menu-icon {
+    display: none; 
+    font-size: 2.5rem; /* Tamaño del ícono */
+    color: var(--azul-principal);
+    cursor: pointer; /* Cambia el cursor para que parezca un botón */
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    margin: 0 3rem 0 0; /* Ajustado para que no empuje demasiado */
+    gap: 3rem; 
+}
+
+.nav-items a {
+    color: var(--azul-principal);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600; 
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, color 0.2s ease; 
+}
+
+.nav-items a:hover {
+    transform: scale(1.1); 
+}
+
+/* --- MEDIA QUERIES (Celulares y Tablets <= 768px) --- */
+@media (max-width: 768px) {
+
+    .logo-container{
+        height: 7rem; 
+        margin-left: 1.25rem;/* Hacemos el contenedor un poco más chico en celulares */
+    }
+
+    .logo-img {
+        max-width: 150px; /* Hacemos el logo más chico en celulares */
+    }
+
+    .nav-items {
+        display: none; /* Oculta los enlaces de texto */
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el ícono de la barrita */
+    }
+}
