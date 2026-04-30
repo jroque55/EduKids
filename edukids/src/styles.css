@@ -9,6 +9,10 @@
     --text-color: #d1d5db;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
 }

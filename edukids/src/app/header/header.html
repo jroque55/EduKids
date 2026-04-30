@@ -3,12 +3,14 @@
         <img src="logo-sin-blanco.png" alt="Logo de EduKids" class="logo-img">
     </div>
     
-    <i class="bi bi-list menu-icon"></i>
+    <i class="menu-icon" 
+       [class]="isMenuOpen ? 'bi bi-x-lg' : 'bi bi-list'" 
+       (click)="toggleMenu()"></i>
 
-    <nav class="nav-items">
-        <a href="/">Inicio</a>
-        <a href="/juegos">Actividades</a>
-        <a href="/ubicaciones">Sedes</a>
-        <a href="/contacto">Contacto</a>
+    <nav class="nav-items" [class.active]="isMenuOpen">
+        <a href=#inicio (click)="toggleMenu()">Inicio</a>
+        <a href=#actividades (click)="toggleMenu()">Actividades</a>
+        <a href=#sedes (click)="toggleMenu()">Sedes</a>
+        <a href=#contacto (click)="toggleMenu()">Contacto</a>
     </nav>
 </header>

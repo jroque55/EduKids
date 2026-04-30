@@ -10,13 +10,13 @@ export class ActivityService {
   {
     nombre: 'Ajedrez',
     descripcion: 'Brindale a tu hijo(a) la oportunidad de aprender más sobre este deporte-ciencia, desarrollando estrategias, mejorando su agilidad mental y su capacidad de análisis.',
-    imagen: ['ajedrez1.jpg', 'ajedrez2.jpg'],
+    imagen: ['ajedrez1.jpeg', 'ajedrez2.jpeg', 'ajedrez3.jpeg', 'ajedrez4.jpeg'],
     icono: 'chess.svg',
   },
   {
     nombre: 'Baile Kids',
     descripcion: 'Potencia la expresión corporal y energía física de tu hijo(a), transmitiendo sus emociones en cada movimiento y ganando confianza y seguridad en si mismo(a)s.',
-    imagen: ['baile1.jpg', 'baile2.jpg'],
+    imagen: ['baile1.jpeg', 'baile2.jpeg'],
     icono: 'dance-kids.svg',
   },
   /*{
@@ -34,19 +34,19 @@ export class ActivityService {
   {
     nombre: 'Comunicación',
     descripcion: 'Refuérzalo con nosotros y aprenderá de forma fácil y rápida los conceptos básicos de comunicación, razonamiento verbal y comprensión lectora.',
-    imagen: ['comunicacion1.jpg', 'comunicacion2.jpg'],
+    imagen: [],
     icono: 'communication.svg',
   },
   {
     nombre: 'Arte y Pintura',
     descripcion: 'Desarrolla el potencial artístico de tu hijo(a) y explota toda su creatividad de la mano con las mejores técnicas de dibujo y pintura.',
-    imagen: ['pintura1.jpg', 'pintura2.jpg'],
+    imagen: ['pintura1.jpeg', 'pintura2.jpeg', 'pintura3.jpeg'],
     icono: 'palette.svg',
   },
   {
     nombre: 'Experimentos',
     descripcion: 'Nuestro taller es 100% práctico, en él los niños realizan experimentos, aprendiendo el lado asombroso y divertido de la ciencia, sus conceptos básicos y más.',
-    imagen: ['ciencia1.jpg', 'ciencia2.jpg'],
+    imagen: [],
     icono: 'science.svg',
   },
   /*{
@@ -64,7 +64,7 @@ export class ActivityService {
   {
     nombre: 'Karate',
     descripcion: 'Potencia la energía física de tu hijo(a) y desarrolla su autoestima y autocontrol mediante técnicas, movimientos y estrategias.',
-    imagen: ['karate1.jpg', 'karate2.jpg'],
+    imagen: ['karate1.jpeg'],
     icono: 'karate.svg',
   },
   /*{
@@ -76,19 +76,19 @@ export class ActivityService {
   {
     nombre: 'Matemática',
     descripcion: 'Refuérzalo con nosotros y aprenderá de forma práctica desde operaciones elementales hasta los problemas más difíciles.',
-    imagen: ['matematica1.jpg', 'matematica2.jpg'],
+    imagen: ['matematica1.jpeg'],
     icono: 'math.svg',
   },
   {
     nombre: 'Minichef',
     descripcion: 'Dale a tu hijo(a) la oportunidad de aprender con nosotros las mejores técnicas culinarias como jugando, de forma fácil y divertida.',
-    imagen: ['cocina1.jpg', 'cocina2.jpg'],
+    imagen: ['cocina1.jpeg', 'cocina2.jpeg', 'cocina3.jpeg'],
     icono: 'chef.svg',
   },
   {
     nombre: 'Oratoria',
     descripcion: 'En nuestro taller le brindaremos a tu hijo(a) las técnicas y herramientas que necesita para poder vencer la timidez, ganar confianza y seguridad.',
-    imagen: ['oratoria1.jpg', 'oratoria2.jpg'],
+    imagen: [],
     icono: 'speech.svg',
   },
   /*{
@@ -100,7 +100,7 @@ export class ActivityService {
   {
     nombre: 'Robótica',
     descripcion: 'Los alumnos aprenderán a armar proyectos de robótica con kits de lego NXT, a la par que aprenderán principios básicos de física e ingeniería.',
-    imagen: ['robotica1.jpg', 'robotica2.jpg'],
+    imagen: ['robotica1.jpeg', 'robotica2.jpeg', 'robotica3.jpeg', 'robotica4.jpeg'],
     icono: 'robot.svg',
   }
   /*{

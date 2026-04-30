@@ -5,9 +5,13 @@
     align-items: center;
     justify-content: space-between;
     box-shadow: 5px 5px 10px var(--soft-shadow);
-    position: relative; /* Necesario para que funcione el z-index */
-    z-index: 10;        /* Coloca el header "por encima" del resto de la página */
+    position: relative; 
+    z-index: 10;        
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+    position: sticky; 
+    top: 0;          
+    z-index: 900;
 }
 
 .logo-container {
@@ -51,23 +55,59 @@
     transform: scale(1.1); 
 }
 
-/* --- MEDIA QUERIES (Celulares y Tablets <= 768px) --- */
 @media (max-width: 768px) {
 
     .logo-container{
         height: 7rem; 
-        margin-left: 1.25rem;/* Hacemos el contenedor un poco más chico en celulares */
+        margin-left: 1.25rem;
     }
 
     .logo-img {
-        max-width: 150px; /* Hacemos el logo más chico en celulares */
+        max-width: 150px;
     }
 
     .nav-items {
-        display: none; /* Oculta los enlaces de texto */
+        display: none; /* Sigue oculto por defecto */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%; /* La magia: Se ubica justo debajo del borde inferior del header */
+        left: 0;
+        width: 100%;
+        background-color: var(--blanco);
+        padding: 2rem 0; /* Espaciado arriba y abajo */
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15); /* Sombra hacia abajo para separarlo del contenido */
+        border-top: 1px solid #f3f4f6; /* Una línea sutil para separarlo del header */
+        margin: 0; 
+        gap: 2rem; /* Separación vertical entre los enlaces */
+    }
+
+    /* Esta es la clase que Angular activa cuando haces clic */
+    .nav-items.active {
+        display: flex;
+        animation: deslizarAbajo 0.3s ease forwards;
+    }
+
+    /* Opcional: Centrar los enlaces y hacerlos un poco más grandes para dedos */
+    .nav-items a {
+        margin: 0;
+        font-size: 1.3rem;
+        width: 100%;
+        text-align: center;
     }
 
     .menu-icon {
-        display: block; /* Muestra el ícono de la barrita */
+        display: block;
+    }
+}
+
+@keyframes deslizarAbajo {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

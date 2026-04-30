@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
-export class Header {}
+export class Header {
+  isMenuOpen: boolean = false;
+
+  // Función que abre o cierra el menú
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+}
