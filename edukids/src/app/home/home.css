@@ -4,12 +4,12 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    margin: auto;
 }
 
 .main-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 3rem;
     width: 100%;
     max-width: 1200px;
@@ -72,7 +72,7 @@
 
 @media (max-width: 768px) {
     .title {
-        font-size: 1.75rem; /* Tamaño máximo para PC grande */
+        font-size: 1.75rem; 
     }
     .kids-img {
         width: 8rem;

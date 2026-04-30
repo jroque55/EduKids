@@ -1,11 +1,13 @@
-/* --- Estilos base (Desktop) --- */
 .header-main {
     background-color: var(--blanco);
     color: var(--azul-principal);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+    box-shadow: 5px 5px 10px var(--soft-shadow);
+    position: relative; /* Necesario para que funcione el z-index */
+    z-index: 10;        /* Coloca el header "por encima" del resto de la página */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo-container {
@@ -13,21 +15,20 @@
     justify-content: center;
     height: 8rem;
     margin-left: 5rem;
-    /* margin-bottom eliminado porque ya usamos flex-row por defecto */
 }
 
 .logo-img {
     width: 100%;
-    max-width: 220px; /* Tamaño para PC */
+    max-width: 220px;
     object-fit: contain; 
 }
 
-/* Estilos del ícono por defecto (oculto en PC) */
 .menu-icon {
     display: none; 
     font-size: 2.5rem; /* Tamaño del ícono */
     color: var(--azul-principal);
     cursor: pointer; /* Cambia el cursor para que parezca un botón */
+    margin-right: 1.5rem; /* Espacio a la derecha del ícono */
 }
 
 .nav-items {
